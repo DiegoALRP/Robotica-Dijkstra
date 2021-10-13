@@ -13,13 +13,20 @@ int main() {
 #endif
 
 
-	unsigned int numCasos;
-	std::cin >> numCasos;
-	// Resolvemos
-	for (int i = 0; i < numCasos; ++i) {
-		resuelveCaso();
-	}
+	unsigned int numNodos;
+	cin >> numNodos;
+	for (int j = 0; j < numNodos; j++) {
 
+		unsigned int numAristas;
+		std::cin >> numAristas;
+		// Resolvemos
+		int aux;
+		for (int i = 0; i < numAristas; ++i) {
+			cin >> aux;
+			cout << aux;
+		}
+		cout << "\n";
+	}
 
 #ifndef DOMJUDGE // para dejar todo como estaba al principio
 	std::cin.rdbuf(cinbuf);
